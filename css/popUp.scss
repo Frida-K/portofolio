@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400;600&family=Fasthand&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300&display=swap");
+
+$primColor:#dea005 ;
+$secondColor:#5388b1 ;
+$backgroundColor: #537895;
+$fontColor: #d4e0ff;
+
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+.page{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button{
+        margin: 15px;
+        width: 200px;
+        border: solid $backgroundColor 4px;
+        border-radius: 5px;
+        cursor: pointer;
+        &:hover{
+            scale:1.1;
+            border: solid $backgroundColor 4px;
+            border-radius: 5px;
+        }
+}
+.btn{
+    border: none;
+    background: $fontColor;
+    margin:15px 0;
+    text-align: center;
+    color: $secondColor;
+    padding: 5px 0;
+
+}
+.popup{
+    position:  fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none ;
+    transition: 0.4s;
+}
+.popup.isActive{
+    opacity: 1;
+    pointer-events: all;
+}
+.popupOverlay{
+    position: absolute;
+    top:0;
+    left:0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    background-color:rgba(0, 0, 0, 0.5);
+}
+
+.popupInner{
+    position: relative;
+    z-index: 1;
+    width: 75%;
+    height: 60%;
+    padding: 50px 30px;
+    background-color: $backgroundColor;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}    
+    .image-popup{
+        width: 40%;
+        border-radius: 16px;
+    }
+    .text{
+        width: 50%;
+        padding-left: 30px;
+        a{
+            color: $primColor;
+        }
+        h2{
+            color: $primColor;
+            margin-bottom: 5px;
+        }
+    }
+
+
+
+
+

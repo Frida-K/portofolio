@@ -1,0 +1,278 @@
+@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400;600&family=Fasthand&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300&display=swap");
+
+$primColor:#dea005 ;
+$secondColor:#5388b1 ;
+$backgroundColor: #537895;
+$fontColor: #d4e0ff;
+$contrastColor: #09203f;
+
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+p{
+    color:$fontColor;
+}
+h1{
+    color:$primColor;
+}
+h3, h4{
+    color:$primColor;
+}
+h2, h5{
+    color:$secondColor;
+}
+nav{
+    background-color: $backgroundColor ;
+}
+.nav-list {
+    min-height: 10vh;
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: auto;
+    list-style: none;
+    .nav-links{
+        text-decoration: none;
+        color: $fontColor;
+        font-size: 18px;
+    }
+}
+.home,
+.realisations,
+.formation,
+.contact,
+.experiences
+{
+    height: 90vh;
+    position:absolute;
+    background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
+}
+.home-content,
+.realisations-content,
+.formation-content,
+.contact-content,
+.experiences-content{
+    height: 100%;
+    width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    .image{
+        height: 70%;
+    }
+    .home-presentation,
+    .realisations-presentation,
+    .formation-presentation,
+    .contact-presentation,
+    .realisations-presentation,
+    .experiences-presentation{
+        margin-left: 50px;
+        width: 50%;
+        h1{
+            font-size: 50px;
+            margin: 30px 0px;
+        }
+        h2{
+            color:$secondColor;
+            font-size: 35px;
+        }
+        p{
+            font-size: 20px;
+            width: 90%;
+        }
+    }
+}
+// format portable page accueil
+@media screen and  (max-width: 868px) {
+    body{
+        background-color: $contrastColor;
+    }
+    .nav-list {
+        width: 100%;
+        .nav-links{
+            font-size: 16px;
+        }
+    }
+    .home,
+    .realisations,
+    .experiences
+    {
+        height: 90vh;
+        display: flex;
+        align-items: center;
+    }
+    .contact,
+    .formation{
+        height: 100vh;
+    }
+    .home-content,
+    .realisations-content,
+    .formation-content,
+    .contact-content,
+    .experiences-content{
+        display: inline;
+        text-align: center;
+        img{
+            width: 90%;
+        }
+        .home-presentation,
+        .realisations-presentation,
+        .formation-presentation,
+        .contact-presentation,
+        .realisations-presentation,
+        .experiences-presentation{
+            width: 100%; 
+            margin: 0;
+            h1{
+                margin-top: 0;
+                padding: 0 5px;
+            }
+            p{
+                margin: 20px 0;
+                padding: 0 10px;
+                width: 100%;
+            }
+        }
+    }
+
+}
+// page réalisations
+.projects{
+    width: 70%;
+    height: 90vh;
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    overflow: scroll;
+    h3{
+        text-align: center;
+    }
+}
+// format portable page réalisation
+@media screen and  (max-width: 868px) {
+    .projects{
+        width: 100%;
+    }
+}
+// page formation
+.formationList{
+    width: 50%;
+}
+.experiencesList{
+    width: 50%;
+    height: 90%;
+    overflow: scroll;
+}
+    .formationDetails,
+    .experiencesDetails{
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        img{
+            margin: 15px;
+            height: 100px;
+            width: 150px;
+            border: solid $backgroundColor 4px;
+            border-radius: 5px;
+            background: white;
+            &:hover{
+                scale:1.1;
+            }
+        }
+        .color{
+            color:$backgroundColor;
+        }
+    }
+    .experiencesDetails{
+        img{
+            height: 100px;
+            width: 100px;
+        }
+    }
+    //format portable pages formation experiences
+@media screen and  (max-width: 868px) {
+    .formationList,
+    .experiencesList{
+        margin-left: 10px;
+        height: 100%;
+        width: 95%;
+        text-align: left;
+        overflow: unset;
+        .formationDetails,
+        .experiencesDetails{
+            display: flex;
+            justify-content: start;
+            align-items: center;
+        }
+    }
+}
+
+// page index
+.icons{
+    margin-top: 15px;
+    i{
+        color:$primColor;
+        margin-right: 15px;
+    &:hover{
+        scale:1.2;
+    }
+    }
+}
+// page Contact
+.carte-contact{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    
+}
+.carte{
+    width: 45%;
+    height: 65vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-radius: 15px;
+    background: #fbfbfb14;
+    img{
+        width: 35%;
+        border-radius:50% ;
+    }
+    p{
+        font-size: 20px;
+        text-align: center;
+    }
+    .btn{
+        color: #09203fcf;
+        text-decoration: none;
+        border: 2px solid $primColor;
+        border-radius: 30px;
+        padding: 10px 30px;
+        background-color: $primColor;
+        font-size: 20px;
+    }
+    .icons-contact{
+        i{
+            margin: 5px;
+            color: $primColor;
+        }
+    }
+}
+// version portable page contact
+@media screen and  (max-width: 868px) {
+    .carte-contact{
+        padding: 15% 0;
+        margin: auto;
+    }
+    .carte{
+        width: 100%;
+        height: 70vh;
+    }
+}

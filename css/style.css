@@ -1,0 +1,476 @@
+@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400;600&family=Fasthand&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+p {
+  color: #d4e0ff;
+}
+
+h1 {
+  color: #dea005;
+}
+
+h3, h4 {
+  color: #dea005;
+}
+
+h2, h5 {
+  color: #5388b1;
+}
+
+nav {
+  background-color: #537895;
+}
+
+.nav-list {
+  min-height: 10vh;
+  display: flex;
+  width: 50%;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: auto;
+  list-style: none;
+}
+.nav-list .nav-links {
+  text-decoration: none;
+  color: #d4e0ff;
+  font-size: 18px;
+}
+
+.home,
+.realisations,
+.formation,
+.contact,
+.experiences {
+  height: 90vh;
+  position: absolute;
+  background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
+}
+
+.home-content,
+.realisations-content,
+.formation-content,
+.contact-content,
+.experiences-content {
+  height: 100%;
+  width: 100vw;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.home-content .image,
+.realisations-content .image,
+.formation-content .image,
+.contact-content .image,
+.experiences-content .image {
+  height: 70%;
+}
+.home-content .home-presentation,
+.home-content .realisations-presentation,
+.home-content .formation-presentation,
+.home-content .contact-presentation,
+.home-content .realisations-presentation,
+.home-content .experiences-presentation,
+.realisations-content .home-presentation,
+.realisations-content .realisations-presentation,
+.realisations-content .formation-presentation,
+.realisations-content .contact-presentation,
+.realisations-content .realisations-presentation,
+.realisations-content .experiences-presentation,
+.formation-content .home-presentation,
+.formation-content .realisations-presentation,
+.formation-content .formation-presentation,
+.formation-content .contact-presentation,
+.formation-content .realisations-presentation,
+.formation-content .experiences-presentation,
+.contact-content .home-presentation,
+.contact-content .realisations-presentation,
+.contact-content .formation-presentation,
+.contact-content .contact-presentation,
+.contact-content .realisations-presentation,
+.contact-content .experiences-presentation,
+.experiences-content .home-presentation,
+.experiences-content .realisations-presentation,
+.experiences-content .formation-presentation,
+.experiences-content .contact-presentation,
+.experiences-content .realisations-presentation,
+.experiences-content .experiences-presentation {
+  margin-left: 50px;
+  width: 50%;
+}
+.home-content .home-presentation h1,
+.home-content .realisations-presentation h1,
+.home-content .formation-presentation h1,
+.home-content .contact-presentation h1,
+.home-content .realisations-presentation h1,
+.home-content .experiences-presentation h1,
+.realisations-content .home-presentation h1,
+.realisations-content .realisations-presentation h1,
+.realisations-content .formation-presentation h1,
+.realisations-content .contact-presentation h1,
+.realisations-content .realisations-presentation h1,
+.realisations-content .experiences-presentation h1,
+.formation-content .home-presentation h1,
+.formation-content .realisations-presentation h1,
+.formation-content .formation-presentation h1,
+.formation-content .contact-presentation h1,
+.formation-content .realisations-presentation h1,
+.formation-content .experiences-presentation h1,
+.contact-content .home-presentation h1,
+.contact-content .realisations-presentation h1,
+.contact-content .formation-presentation h1,
+.contact-content .contact-presentation h1,
+.contact-content .realisations-presentation h1,
+.contact-content .experiences-presentation h1,
+.experiences-content .home-presentation h1,
+.experiences-content .realisations-presentation h1,
+.experiences-content .formation-presentation h1,
+.experiences-content .contact-presentation h1,
+.experiences-content .realisations-presentation h1,
+.experiences-content .experiences-presentation h1 {
+  font-size: 50px;
+  margin: 30px 0px;
+}
+.home-content .home-presentation h2,
+.home-content .realisations-presentation h2,
+.home-content .formation-presentation h2,
+.home-content .contact-presentation h2,
+.home-content .realisations-presentation h2,
+.home-content .experiences-presentation h2,
+.realisations-content .home-presentation h2,
+.realisations-content .realisations-presentation h2,
+.realisations-content .formation-presentation h2,
+.realisations-content .contact-presentation h2,
+.realisations-content .realisations-presentation h2,
+.realisations-content .experiences-presentation h2,
+.formation-content .home-presentation h2,
+.formation-content .realisations-presentation h2,
+.formation-content .formation-presentation h2,
+.formation-content .contact-presentation h2,
+.formation-content .realisations-presentation h2,
+.formation-content .experiences-presentation h2,
+.contact-content .home-presentation h2,
+.contact-content .realisations-presentation h2,
+.contact-content .formation-presentation h2,
+.contact-content .contact-presentation h2,
+.contact-content .realisations-presentation h2,
+.contact-content .experiences-presentation h2,
+.experiences-content .home-presentation h2,
+.experiences-content .realisations-presentation h2,
+.experiences-content .formation-presentation h2,
+.experiences-content .contact-presentation h2,
+.experiences-content .realisations-presentation h2,
+.experiences-content .experiences-presentation h2 {
+  color: #5388b1;
+  font-size: 35px;
+}
+.home-content .home-presentation p,
+.home-content .realisations-presentation p,
+.home-content .formation-presentation p,
+.home-content .contact-presentation p,
+.home-content .realisations-presentation p,
+.home-content .experiences-presentation p,
+.realisations-content .home-presentation p,
+.realisations-content .realisations-presentation p,
+.realisations-content .formation-presentation p,
+.realisations-content .contact-presentation p,
+.realisations-content .realisations-presentation p,
+.realisations-content .experiences-presentation p,
+.formation-content .home-presentation p,
+.formation-content .realisations-presentation p,
+.formation-content .formation-presentation p,
+.formation-content .contact-presentation p,
+.formation-content .realisations-presentation p,
+.formation-content .experiences-presentation p,
+.contact-content .home-presentation p,
+.contact-content .realisations-presentation p,
+.contact-content .formation-presentation p,
+.contact-content .contact-presentation p,
+.contact-content .realisations-presentation p,
+.contact-content .experiences-presentation p,
+.experiences-content .home-presentation p,
+.experiences-content .realisations-presentation p,
+.experiences-content .formation-presentation p,
+.experiences-content .contact-presentation p,
+.experiences-content .realisations-presentation p,
+.experiences-content .experiences-presentation p {
+  font-size: 20px;
+  width: 90%;
+}
+
+@media screen and (max-width: 868px) {
+  body {
+    background-color: #09203f;
+  }
+  .nav-list {
+    width: 100%;
+  }
+  .nav-list .nav-links {
+    font-size: 16px;
+  }
+  .home,
+.realisations,
+.experiences {
+    height: 90vh;
+    display: flex;
+    align-items: center;
+  }
+  .contact,
+.formation {
+    height: 100vh;
+  }
+  .home-content,
+.realisations-content,
+.formation-content,
+.contact-content,
+.experiences-content {
+    display: inline;
+    text-align: center;
+  }
+  .home-content img,
+.realisations-content img,
+.formation-content img,
+.contact-content img,
+.experiences-content img {
+    width: 90%;
+  }
+  .home-content .home-presentation,
+.home-content .realisations-presentation,
+.home-content .formation-presentation,
+.home-content .contact-presentation,
+.home-content .realisations-presentation,
+.home-content .experiences-presentation,
+.realisations-content .home-presentation,
+.realisations-content .realisations-presentation,
+.realisations-content .formation-presentation,
+.realisations-content .contact-presentation,
+.realisations-content .realisations-presentation,
+.realisations-content .experiences-presentation,
+.formation-content .home-presentation,
+.formation-content .realisations-presentation,
+.formation-content .formation-presentation,
+.formation-content .contact-presentation,
+.formation-content .realisations-presentation,
+.formation-content .experiences-presentation,
+.contact-content .home-presentation,
+.contact-content .realisations-presentation,
+.contact-content .formation-presentation,
+.contact-content .contact-presentation,
+.contact-content .realisations-presentation,
+.contact-content .experiences-presentation,
+.experiences-content .home-presentation,
+.experiences-content .realisations-presentation,
+.experiences-content .formation-presentation,
+.experiences-content .contact-presentation,
+.experiences-content .realisations-presentation,
+.experiences-content .experiences-presentation {
+    width: 100%;
+    margin: 0;
+  }
+  .home-content .home-presentation h1,
+.home-content .realisations-presentation h1,
+.home-content .formation-presentation h1,
+.home-content .contact-presentation h1,
+.home-content .realisations-presentation h1,
+.home-content .experiences-presentation h1,
+.realisations-content .home-presentation h1,
+.realisations-content .realisations-presentation h1,
+.realisations-content .formation-presentation h1,
+.realisations-content .contact-presentation h1,
+.realisations-content .realisations-presentation h1,
+.realisations-content .experiences-presentation h1,
+.formation-content .home-presentation h1,
+.formation-content .realisations-presentation h1,
+.formation-content .formation-presentation h1,
+.formation-content .contact-presentation h1,
+.formation-content .realisations-presentation h1,
+.formation-content .experiences-presentation h1,
+.contact-content .home-presentation h1,
+.contact-content .realisations-presentation h1,
+.contact-content .formation-presentation h1,
+.contact-content .contact-presentation h1,
+.contact-content .realisations-presentation h1,
+.contact-content .experiences-presentation h1,
+.experiences-content .home-presentation h1,
+.experiences-content .realisations-presentation h1,
+.experiences-content .formation-presentation h1,
+.experiences-content .contact-presentation h1,
+.experiences-content .realisations-presentation h1,
+.experiences-content .experiences-presentation h1 {
+    margin-top: 0;
+    padding: 0 5px;
+  }
+  .home-content .home-presentation p,
+.home-content .realisations-presentation p,
+.home-content .formation-presentation p,
+.home-content .contact-presentation p,
+.home-content .realisations-presentation p,
+.home-content .experiences-presentation p,
+.realisations-content .home-presentation p,
+.realisations-content .realisations-presentation p,
+.realisations-content .formation-presentation p,
+.realisations-content .contact-presentation p,
+.realisations-content .realisations-presentation p,
+.realisations-content .experiences-presentation p,
+.formation-content .home-presentation p,
+.formation-content .realisations-presentation p,
+.formation-content .formation-presentation p,
+.formation-content .contact-presentation p,
+.formation-content .realisations-presentation p,
+.formation-content .experiences-presentation p,
+.contact-content .home-presentation p,
+.contact-content .realisations-presentation p,
+.contact-content .formation-presentation p,
+.contact-content .contact-presentation p,
+.contact-content .realisations-presentation p,
+.contact-content .experiences-presentation p,
+.experiences-content .home-presentation p,
+.experiences-content .realisations-presentation p,
+.experiences-content .formation-presentation p,
+.experiences-content .contact-presentation p,
+.experiences-content .realisations-presentation p,
+.experiences-content .experiences-presentation p {
+    margin: 20px 0;
+    padding: 0 10px;
+    width: 100%;
+  }
+}
+.projects {
+  width: 70%;
+  height: 90vh;
+  padding-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  overflow: scroll;
+}
+.projects h3 {
+  text-align: center;
+}
+
+@media screen and (max-width: 868px) {
+  .projects {
+    width: 100%;
+  }
+}
+.formationList {
+  width: 50%;
+}
+
+.experiencesList {
+  width: 50%;
+  height: 90%;
+  overflow: scroll;
+}
+
+.formationDetails,
+.experiencesDetails {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.formationDetails img,
+.experiencesDetails img {
+  margin: 15px;
+  height: 100px;
+  width: 150px;
+  border: solid #537895 4px;
+  border-radius: 5px;
+  background: white;
+}
+.formationDetails img:hover,
+.experiencesDetails img:hover {
+  scale: 1.1;
+}
+.formationDetails .color,
+.experiencesDetails .color {
+  color: #537895;
+}
+
+.experiencesDetails img {
+  height: 100px;
+  width: 100px;
+}
+
+@media screen and (max-width: 868px) {
+  .formationList,
+.experiencesList {
+    margin-left: 10px;
+    height: 100%;
+    width: 95%;
+    text-align: left;
+    overflow: unset;
+  }
+  .formationList .formationDetails,
+.formationList .experiencesDetails,
+.experiencesList .formationDetails,
+.experiencesList .experiencesDetails {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  }
+}
+.icons {
+  margin-top: 15px;
+}
+.icons i {
+  color: #dea005;
+  margin-right: 15px;
+}
+.icons i:hover {
+  scale: 1.2;
+}
+
+.carte-contact {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.carte {
+  width: 45%;
+  height: 65vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border-radius: 15px;
+  background: rgba(251, 251, 251, 0.0784313725);
+}
+.carte img {
+  width: 35%;
+  border-radius: 50%;
+}
+.carte p {
+  font-size: 20px;
+  text-align: center;
+}
+.carte .btn {
+  color: rgba(9, 32, 63, 0.8117647059);
+  text-decoration: none;
+  border: 2px solid #dea005;
+  border-radius: 30px;
+  padding: 10px 30px;
+  background-color: #dea005;
+  font-size: 20px;
+}
+.carte .icons-contact i {
+  margin: 5px;
+  color: #dea005;
+}
+
+@media screen and (max-width: 868px) {
+  .carte-contact {
+    padding: 15% 0;
+    margin: auto;
+  }
+  .carte {
+    width: 100%;
+    height: 70vh;
+  }
+}/*# sourceMappingURL=style.css.map */
