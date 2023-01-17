@@ -47,7 +47,8 @@ nav{
 .formation,
 .contact,
 .experiences
-{
+{    
+    width: 100vw;
     height: 90vh;
     position:absolute;
     background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
@@ -58,7 +59,6 @@ nav{
 .contact-content,
 .experiences-content{
     height: 100%;
-    width: 100vw;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -168,7 +168,7 @@ nav{
 .experiencesList{
     width: 50%;
     height: 90%;
-    overflow: scroll;
+    overflow-y: scroll;
 }
     .formationDetails,
     .experiencesDetails{
@@ -176,7 +176,7 @@ nav{
         justify-content: start;
         align-items: center;
         img{
-            margin: 15px;
+            margin: 10px;
             height: 100px;
             width: 150px;
             border: solid $backgroundColor 4px;
@@ -204,7 +204,7 @@ nav{
         height: 100%;
         width: 95%;
         text-align: left;
-        overflow: unset;
+        overflow-y: unset;
         .formationDetails,
         .experiencesDetails{
             display: flex;
