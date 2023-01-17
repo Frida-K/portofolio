@@ -347,7 +347,7 @@ nav {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  overflow: scroll;
+  overflow-y: scroll;
 }
 .projects h3 {
   text-align: center;
